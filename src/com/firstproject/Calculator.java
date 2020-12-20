@@ -16,7 +16,12 @@ public class Calculator {
 
     }
 
-    public float rectsSum() {
+    public float sumSquares()
+    {
+        return rectsSum() + circlesSum();
+    }
+
+    private float rectsSum() {
         float rectsSquareSum = 0;
         for (Rect rect : rects) {
 
@@ -25,7 +30,7 @@ public class Calculator {
         return rectsSquareSum;
     }
 
-    public float circlesSum() {
+    private float circlesSum() {
         float circleSquareSum = 0;
         for (Circle circle : circles) {
 

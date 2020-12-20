@@ -13,9 +13,8 @@ public class App {
         calc.addRect(new Rect(2,2));
         System.out.println(rect1.square());
         System.out.println(rect2.square());
-        System.out.println(calc.rectsSum()+ calc.circlesSum());
+        System.out.println(calc.sumSquares());
         System.out.println(circle1.square());
-
 
     }
 }
