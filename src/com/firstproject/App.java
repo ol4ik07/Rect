@@ -7,13 +7,13 @@ public class App {
         Circle circle1 = new Circle(5);
 
         Calculator calc = new Calculator();
-        calc.addRect(rect1);
-        calc.addRect(rect2);
-        calc.addCircle(circle1);
-        calc.addRect(new Rect(2,2));
+        calc.addFigure(rect1);
+        calc.addFigure(rect2);
+        calc.addFigure(circle1);
+        calc.addFigure(new Rect(2,2));
         System.out.println(rect1.square());
         System.out.println(rect2.square());
-        System.out.println(calc.sumSquares());
+        System.out.println(calc.figureSum());
         System.out.println(circle1.square());
 
     }

@@ -3,41 +3,19 @@ package com.firstproject;
 
 import java.util.ArrayList;
 
-public class Calculator {
-    ArrayList<Rect> rects = new ArrayList<Rect>();
-    ArrayList<Circle> circles = new ArrayList<Circle>();
+public class Calculator{
+    ArrayList<Figure> figures = new ArrayList<Figure>();
 
-    public void addRect(Rect rect) {
-        rects.add(rect);
-
-    }
-    public void addCircle(Circle circle) {
-        circles.add(circle);
-
+    public void addFigure(Figure figure) {
+        figures.add(figure);
     }
 
-    public float sumSquares()
-    {
-        return rectsSum() + circlesSum();
-    }
+    public float figureSum() {
+        float figureSquareSum = 0;
+        for (Figure figure : figures) {
 
-    private float rectsSum() {
-        float rectsSquareSum = 0;
-        for (Rect rect : rects) {
-
-            rectsSquareSum = rectsSquareSum + rect.square();
+            figureSquareSum = figureSquareSum + figure.square();
         }
-        return rectsSquareSum;
+        return figureSquareSum;
     }
-
-    private float circlesSum() {
-        float circleSquareSum = 0;
-        for (Circle circle : circles) {
-
-            circleSquareSum = circleSquareSum + circle.square();
-        }
-        return circleSquareSum;
-    }
-
-
 }
